@@ -1,0 +1,8 @@
+/workspaces/Seraphina
+## main...origin/main [behind 1]
+/workspaces/Seraphina
+/workspaces/Seraphina/.git
+/workspaces/.codespaces
+/workspaces/.codespaces/.persistedshare
+/workspaces/.codespaces/shared
+/workspaces/.oryx
