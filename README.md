@@ -12,11 +12,11 @@
 
 ## 檔案
 
-所有 8 個檔案放在儲存庫根目錄：`index.html`、`style.css`、`site.js`、`favicon.svg`、`logo.png`、`seraphina.jpg`、`character-sheet.png`、`README.md`。
+核心 8 個檔案放在儲存庫根目錄：`index.html`、`style.css`、`site.js`、`favicon.svg`、`logo.png`、`seraphina.jpg`、`character-sheet.png`、`README.md`。
 
-## 由網站擁有者確認發布
+## 部署方式
 
-本次更新先放在獨立分支並建立 Pull request，保留 main 與現有公開網站。
+更新透過獨立分支與 Pull request 保留修改紀錄，驗收後合併至 main。
 檢查 Pull request 的 Files changed，確認後按 Merge pull request → Confirm merge。
 既有 GitHub Pages 流程會依 main 的更新部署；到 Actions 確認部署成功。
 公開網址：https://seraphinanightshade1112.github.io/Seraphina/
@@ -30,3 +30,8 @@
 - Twitch、YouTube、LINKGOODS、Discord 與原圖入口保留。
 
 這是純靜態網站，無需新增付費服務或啟動 Codespaces。
+
+## 公開資料擴充（2026-11-16）
+
+新增人物小檔案、開台公告入口、三支可點選載入的精選影片、X／棉花糖、看台提醒與 FAQ、聯動信箱及官方支持入口。
+內容依 `CONTENT-SOURCES.md` 的來源核對。另附 `sitemap.xml` 與 `404.html`；網站仍為純靜態，無需登入或付費服務。
