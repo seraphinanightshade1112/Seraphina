@@ -39,6 +39,21 @@
       scroller.scrollTo(0, 0);
     });
   }
+  document.querySelectorAll('.load-video').forEach(button => {
+    button.addEventListener('click', () => {
+      const stage = button.closest('.video-stage');
+      const id = stage.dataset.video;
+      if (!/^[a-zA-Z0-9_-]{11}$/.test(id)) return;
+      const frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&playsinline=1';
+      frame.title = stage.dataset.title;
+      frame.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      stage.replaceChildren(frame);
+      frame.focus();
+    });
+  });
   const status = document.querySelector('.copy-status');
   document.querySelectorAll('[data-copy]').forEach(button => {
     button.addEventListener('click', async () => {
